@@ -1,0 +1,28 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/uk/cosmo_ws/install/urdf_tutorial/lib/python3.10/site-packages",
+        "/home/uk/cosmo_ws/install/rqt_joint_trajectory_controller/lib/python3.10/site-packages",
+        "/home/uk/cosmo_ws/install/rqt_controller_manager/lib/python3.10/site-packages",
+        "/home/uk/cosmo_ws/install/ros2controlcli/lib/python3.10/site-packages",
+        "/home/uk/cosmo_ws/install/ros2_controllers_test_nodes/lib/python3.10/site-packages",
+        "/home/uk/cosmo_ws/install/controller_manager/local/lib/python3.10/dist-packages",
+        "/home/uk/cosmo_ws/install/ros2_control_demo_testing/lib/python3.10/site-packages",
+        "/home/uk/cosmo_ws/install/controller_manager_msgs/local/lib/python3.10/dist-packages",
+        "/home/uk/cosmo_ws/install/control_msgs/local/lib/python3.10/dist-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/uk/cosmo_ws/install/urdf_tutorial/lib/python3.10/site-packages",
+        "/home/uk/cosmo_ws/install/rqt_joint_trajectory_controller/lib/python3.10/site-packages",
+        "/home/uk/cosmo_ws/install/rqt_controller_manager/lib/python3.10/site-packages",
+        "/home/uk/cosmo_ws/install/ros2controlcli/lib/python3.10/site-packages",
+        "/home/uk/cosmo_ws/install/ros2_controllers_test_nodes/lib/python3.10/site-packages",
+        "/home/uk/cosmo_ws/install/controller_manager/local/lib/python3.10/dist-packages",
+        "/home/uk/cosmo_ws/install/ros2_control_demo_testing/lib/python3.10/site-packages",
+        "/home/uk/cosmo_ws/install/controller_manager_msgs/local/lib/python3.10/dist-packages",
+        "/home/uk/cosmo_ws/install/control_msgs/local/lib/python3.10/dist-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ]
+}
