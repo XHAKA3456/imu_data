@@ -44,7 +44,7 @@ class IMUPublishNode(Node):
 
             # Header
             imu.header.stamp = self.get_clock().now().to_msg()
-            imu.header.frame_id = 'imu'            
+            imu.header.frame_id = 'imu_sensor'            
             imu.orientation.x = quatX
             imu.orientation.y = quatY
             imu.orientation.z = quatZ
