@@ -19,7 +19,7 @@ class IMUPublishNode(Node):
         self.publisher = self.create_publisher(Imu, 'imu_data', 10)
 
         # Timer to periodically check for data
-        self.timer = self.create_timer(1.0, self.timer_callback)
+        self.timer = self.create_timer(0.02, self.timer_callback)
 
     def timer_callback(self):
         try:
@@ -27,16 +27,16 @@ class IMUPublishNode(Node):
             data = json.loads(data.decode('utf-8'))
             
             # Extract quaternion values
-            quatX = data.get('quatX', 0.0)
-            quatY = data.get('quatY', 0.0)
-            quatZ = data.get('quatZ', 0.0)
-            quatW = data.get('quatW', 0.0)
-            accX = data.get('accelX',0.0)
-            accY = data.get('accelY',0.0)
-            accZ = data.get('accelZ',0.0)
-            gyrX = data.get('gyroX',0.0)
-            gyrY = data.get('gyroY',0.0)
-            gyrZ = data.get('gyroZ',0.0)
+            quatX = float(data.get('quatX', 0.0))
+            quatY = float(data.get('quatY', 0.0))
+            quatZ = float(data.get('quatZ', 0.0))
+            quatW = float(data.get('quatW', 0.0))
+            accX = float(data.get('accelX',0.0))
+            accY = float(data.get('accelY',0.0))
+            accZ = float(data.get('accelZ',0.0))
+            gyrX = float(data.get('gyroX',0.0))
+            gyrY = float(data.get('gyroY',0.0))
+            gyrZ = float(data.get('gyroZ',0.0))
             
             # Create PoseArray message
             # Create a Pose with the extracted quaternion values
